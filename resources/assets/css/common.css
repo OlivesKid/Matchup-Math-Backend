@@ -1,0 +1,181 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-Nov-2017, 14:06:15
+    Author     : Bitmatrix109
+*/
+
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    max-width: 300px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 5000;
+    left: 90%;
+    top: 120px;
+    font-size: 17px;
+}
+
+@media (max-width:520px){
+    #toast {
+        left: 70%;
+        top: 120px;
+    }
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 120px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 120px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 120px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 100px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+.alert-msg{
+    display: block;
+    float: left;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.red.lighten-2 {
+    background-color: #E57373!important;
+}
+.red-text.text-lighten-5 {
+    color: #FFEBEE!important;
+}
+.stats-card {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.card-panel {
+    margin: 0;
+}
+.card-panel {
+    padding: 2rem;
+}
+.card, .card-panel {
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+.red-text {
+    color: #F44336!important;
+}
+.card-panel {
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.26);
+}
+.stats-card>i {
+    position: absolute;
+    font-size: 6rem;
+    right: 0;
+    bottom: -1rem;
+}
+
+.stats-card .count {
+    position: relative;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.stats-card .name {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.blue.lighten-2 {
+    background-color: #64B5F6!important;
+}
+.blue-text.text-lighten-5 {
+    color: #E3F2FD!important;
+}
+.amber.lighten-2 {
+    background-color: #ffd54f!important;
+}
+.amber-text.text-lighten-5 {
+    color: #fff8e1!important;
+}
+
+
+.white.lighten-2 {
+    background-color: white !important;
+}
+.white-text.text-lighten-5 {
+    color: black !important;
+}
+
+
+.green.lighten-2 {
+    background-color: #81C784!important;
+}
+
+.green-text.text-lighten-5 {
+    color: #E8F5E9!important;
+}
+.sortable{
+    margin-top: 2rem;
+    margin-right: -2rem;
+    margin-bottom: -2rem;
+    padding: 10px 2rem 2rem;
+}
+.mrg-top{
+    margin-top: 0px;
+}
+.custom-btn-primary{
+    color: #fff!important;background-color: #607d8b;border-color: #607d8b;
+}
+.pagination-disable{
+    opacity: 0.50;
+}
+.ui-autocomplete {
+z-index: 1100 !important;
+}
+.ui-menu-item:hover{
+    background-color: #F0F0F0;
+}
+.ui-state-focus{
+    border: none !important;
+    background-color: #F0F0F0 !important;
+}
+.custom-autocomplete-hover{
+    background-color: #F0F0F0;
+}
+.default_margin{
+    margin: 15px;
+}
+.pad_t_b{
+    padding-bottom: 7px !important;
+    padding-top: 7px !important;
+}
